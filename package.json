@@ -1,0 +1,27 @@
+{
+  "name": "precize-backend",
+  "version": "1.0.0",
+  "description": "Precoze backend assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dinesh07sengar/precize-backend.git"
+  },
+  "keywords": [],
+  "author": "Dinesh-Sengar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dinesh07sengar/precize-backend/issues"
+  },
+  "homepage": "https://github.com/dinesh07sengar/precize-backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^7.2.2",
+    "nodemon": "^2.0.22"
+  }
+}
