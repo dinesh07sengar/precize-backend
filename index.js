@@ -2,6 +2,7 @@ const express = require('express')
 const {connect}= require('./config/db')
 const {route} = require("./routes/userRoute")
 const cors = require('cors')
+require('dotenv').config()
 
 const app = express()
 app.use(cors())
@@ -13,7 +14,7 @@ app.get("/",(req,res)=>{
 
 app.use("/user",route)
 
-app.listen(5200, async () => {
+app.listen(process.env.PORT, async () => {
     try {
         connect()
         console.log("Your server is running at http://localhost:5200")
